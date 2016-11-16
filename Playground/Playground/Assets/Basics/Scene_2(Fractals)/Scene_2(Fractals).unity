@@ -121,10 +121,10 @@ MonoBehaviour:
   - {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
   - {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
   material: {fileID: 2100000, guid: 29e667ec835701e4caf9051c376087e1, type: 2}
-  MaxDepth: 4
+  MaxDepth: 6
   childScale: 0.8
-  spawnProbability: 1
-  maxRotationSpeed: 60
+  spawnProbability: 0.5
+  maxRotationSpeed: 25
   maxTwist: 20
 --- !u!4 &393320236
 Transform:

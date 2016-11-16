@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ObjectOperator : MonoBehaviour {
+public class ObjectOperator : PooledObject
+{
 
     public Rigidbody Body { get; private set; }
 
@@ -10,12 +11,20 @@ public class ObjectOperator : MonoBehaviour {
         Body = GetComponent<Rigidbody>();
     }
 
-	void Start () {
-	
-	}
-	
+    void Start()
+    {
 
-	void Update () {
-	
-	}
+    }
+
+
+    void Update()
+    {
+
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.transform.tag == "KillZone")
+            ReturnToPool();
+    }
 }

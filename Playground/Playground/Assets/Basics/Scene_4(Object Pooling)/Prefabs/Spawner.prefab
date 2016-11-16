@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011789350226}
   - 114: {fileID: 114000012499059682}
+  - 114: {fileID: 114000012808976374}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -51,8 +52,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71addb79bd8ade447a99fdb97adbd8e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenSpawns: 0.1
   objectPrefabs:
   - {fileID: 114000012919114304, guid: 49cb017df97684544856fad30d10bdf9, type: 2}
   - {fileID: 114000010100040902, guid: 35a1f8cc352528b498f8e7abf520e000, type: 2}
+  objectMaterial: {fileID: 0}
+  timeBetweenSpawn:
+    min: 0.05
+    max: 0.15
+  scale:
+    min: 0.25
+    max: 1
+  randomVelocity:
+    min: 0
+    max: 4
+  angularVelocity:
+    min: 0
+    max: 4
   velocity: 15
+--- !u!114 &114000012808976374
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010410677142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc60bbdd55818c54f8b7958147c119fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

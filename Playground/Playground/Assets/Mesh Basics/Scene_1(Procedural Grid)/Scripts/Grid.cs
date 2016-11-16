@@ -3,7 +3,8 @@ using System.Collections;
 using System;
 
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
-public class Grid : MonoBehaviour {
+public class Grid : MonoBehaviour
+{
 
     public int xSize, ySize;
 
@@ -20,7 +21,7 @@ public class Grid : MonoBehaviour {
 
     private IEnumerator Generate()
     {
-        WaitForSeconds wait = new WaitForSeconds(0.05f);
+        WaitForSeconds wait = new WaitForSeconds(0.005f);
 
         GetComponent<MeshFilter>().mesh = mesh = new Mesh();
         mesh.name = "Procedural Grid";
