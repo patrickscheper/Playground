@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Basics/Scene_4(Object Pooling)/Scene_4(Object Pooling).unity
+- path: Assets/Mesh Basics/Scene_2(Rounded Cube)/Scene_2(Rounded Cube).unity
   isLoaded: 1
   isActive: 1

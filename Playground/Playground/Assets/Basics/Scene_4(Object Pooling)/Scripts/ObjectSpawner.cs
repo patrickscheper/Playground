@@ -16,7 +16,6 @@ public class ObjectSpawner : MonoBehaviour
 
     void FixedUpdate()
     {
-
         timeSinceLastSpawn += Time.deltaTime;
         if (timeSinceLastSpawn >= currentSpawnDelay)
         {
@@ -24,7 +23,6 @@ public class ObjectSpawner : MonoBehaviour
             currentSpawnDelay = timeBetweenSpawn.RandomInRange;
             SpawnObjects();
         }
-
     }
 
     void SpawnObjects()
